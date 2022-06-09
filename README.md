@@ -7,6 +7,7 @@ A link shortener for Jekyll.
 1. Fork this repo.
 2. Edit the `repo` variable in `_config.yml`. This should be the repository owner and name in this format: `owner/name`.
 3. Edit the `redirect_to` variable in `_config.yml`. This will be the link to your website.
+4. Enable Github Pages in forked repository settings.
 
 ## Making short links
 
