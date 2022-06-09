@@ -1,0 +1,22 @@
+name: Comment
+
+on: [issues]
+
+jobs:
+  comment-id:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.4.2
+    - name: Setup Node.js
+      uses: actions/setup-node@v3.3.0
+    - name: Install dependencies
+      run: npm ci
+      working-directory: ./scripts
+    - name: Run script
+      run: node comment_id.js
+      working-directory: ./scripts
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
