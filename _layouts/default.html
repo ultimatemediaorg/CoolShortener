@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ layout.title }}{% endif %} - Powered by CoolShortener</title>
+        <style>
+            html, body {
+                font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            }
+        </style>
+        {{ page.head_content }}
+        {{ layout.head_content }}
+    </head>
+    <body>
+        {{ content }}
+        <hr>
+        <p>Powered by <a href="https://github.com/ultimatemediaorg/CoolShortener" target="_blank">CoolShortener</a></p>
+    </body>
+</html>

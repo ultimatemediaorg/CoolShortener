@@ -1,0 +1,10 @@
+# Repo where issues & code is stored
+repo: "ultimatemediaorg/CoolShortener"
+
+default:
+  - scope:
+      type: "redirect"
+    values:
+      # If you go to the root of the shortener, you will be
+      # redirected to the below URL.
+      redirect_to: "https://ultimatemedia.js.org/stuff/coolstuff"
