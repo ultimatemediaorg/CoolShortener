@@ -11,6 +11,6 @@ jobs:
       issues: write
     steps:
     - name: Run script
-      uses: ultimatemediaorg/CoolShortener-action@v1.0.2
+      uses: ultimatemediaorg/CoolShortener-action@v1.0.3
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
