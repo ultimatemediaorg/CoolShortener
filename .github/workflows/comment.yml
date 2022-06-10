@@ -1,6 +1,8 @@
 name: Comment
 
-on: [issues]
+on:
+  issues:
+    types: [opened, edited]
 
 jobs:
   comment-id:
